@@ -1,0 +1,16 @@
+{
+  "name": "rajram",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "pnpm -r run dev",
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api dev",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "dev:all": "pnpm -r --parallel run dev"
+  }
+}
