@@ -4,10 +4,15 @@
 
 @layer base {
   html {
-    color-scheme: dark;
+    background-color: #131315;
+    color: #e5e1e4;
+    font-family: "Geist", ui-sans-serif, system-ui, sans-serif;
   }
 
   body {
-    @apply bg-slate-950 text-slate-100 antialiased;
+    background-color: #131315;
+    color: #e5e1e4;
+    font-family: "Geist", ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
 }
