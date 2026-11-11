@@ -23,7 +23,10 @@ export function GradeSlider() {
         src={finalImage}
       />
       {/* Raw log image clipped by slider */}
-      <div className="absolute inset-y-0 left-0 overflow-hidden" style={{ width: `${value}%` }}>
+      <div
+        className="absolute inset-y-0 left-0 overflow-hidden"
+        style={{ width: `${value}%` }}
+      >
         <img
           alt="Raw Log Sensor bride image"
           className="absolute inset-0 w-full h-full object-cover filter saturate-50 contrast-75 brightness-125 sepia-[0.1]"

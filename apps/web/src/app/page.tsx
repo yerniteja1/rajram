@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { CinematicHud } from "@/components/cinematic/CinematicHud";
 import { GradeSlider } from "@/components/cinematic/GradeSlider";
@@ -12,6 +14,7 @@ const LENS_IMAGE =
 
 export default function HomePage() {
   return (
+    <>
     <main className="bg-surface text-on-surface font-sans">
       <CinematicHud />
 
@@ -598,7 +601,6 @@ export default function HomePage() {
       </section>
     </main>
 
-    {/* FOOTER */}
     <footer className="w-full bg-surface-container-lowest py-24">
       <div className="w-full px-4 md:px-8 lg:px-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
@@ -643,4 +645,6 @@ export default function HomePage() {
         </div>
       </div>
     </footer>
+    </>
+  );
 }
