@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@hono/node-server": "^2.1.6",
+    "@rajram/db": "workspace:*",
+    "@rajram/storage": "workspace:*",
+    "drizzle-orm": "^0.44.7",
     "hono": "^4.6.18",
     "razorpay": "^2.9.8"
   },

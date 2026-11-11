@@ -125,6 +125,9 @@ export const bookings = pgTable("bookings", {
   eventDate: date("event_date"),
   status: text("status").notNull().default("pending"),
   notes: jsonb("notes"),
+  paymentOrderId: text("payment_order_id"),
+  paymentPaymentId: text("payment_payment_id"),
+  paidAt: timestamp("paid_at", { withTimezone: true }),
   createdAt: timestamp("created_at", { withTimezone: true })
     .notNull()
     .default(sql`now()`),
